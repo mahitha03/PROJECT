@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>oneplus images</title>
+
+</head>
+<body>
+      <div class="container">
+          <ul class="thumb">
+              <li ><a href="C:\Users\hi\Desktop\html\oneplus.jpg" target="imgBx"> <img src="C:\Users\hi\Desktop\html\images\thumb1.jpeg" ></a></li>
+              <li ><a href="C:\Users\hi\Desktop\html\oneplus3.jpg" target="imgBx"> <img src="C:\Users\hi\Desktop\html\images\thumb2.png" ></a></li>
+              <li ><a href="C:\Users\hi\Desktop\html\oneplusm.png" target="imgBx"> <img src="C:\Users\hi\Desktop\html\images\thumb3.png" ></a></li>
+          </ul>
+          <div class="imgBx"><img src="C:\Users\hi\Desktop\html\oneplus.jpg" ></div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('.thumb a').mouseover(function(e){
+          e.preventDefault();
+          $('.imgBx img').attr("src",$(this).attr("href"));
+      })
+  })</script>
+</body>
+</html>
